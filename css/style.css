@@ -1,0 +1,179 @@
+body {
+    background-image: url(../img/background-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90%;
+}
+
+#title {
+    text-align: center;
+    margin-top: 20px;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 1s linear;
+    font: 400 70px/1.2 'Leckerli One', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+#content {
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 40px;
+    text-align: justify;
+    padding-right: 12px;
+    font-size: 18px;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+}
+
+#panel {
+    display: none;
+    padding: 10px;
+    background: transparent;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#contentFades {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+}
+
+#move {
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    font-size: 24px;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+}
+
+#game_board {
+    background-image: url(../img/broad.jpg);
+    background-size: cover;
+    clear: both;
+    margin: 0 auto;
+    display: table;
+    position: absolute;
+    top: 170px;
+    left: 480px;
+}
+
+#game_board .cell {
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 12px;
+    float: left;
+    width: 110px;
+    height: 90px;
+    line-height: 60px;
+    padding-top: 15px;
+    text-align: center;
+    font: 400 70px/1.2 'Leckerli One', Helvetica, sans-serif;
+    text-shadow: 0px 2px 3px #666;
+}
+
+.clear {
+    clear: both;
+    line-height: 0px;
+}
+
+#game_board .player1_cell {
+    color: #239ced;
+}
+
+#game_board .player2_cell {
+    color: #ff1818;
+}
+
+#game_board .hover {
+    background: #63777e;
+}
+
+#game_board .win {
+    background: #D3E7DC;
+}
+
+#player_mark,
+#player_name {
+    padding: 0px 3px;
+}
+
+.end {
+    display: none;
+}
+
+center {
+    margin-top: 270px;
+}
+
+#ask_restart {
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+#winner {
+    font-size: 30px;
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+}
+
+table {
+    clear: both;
+    border: 3px solid #f95252;
+    border-width: 1px;
+    float: right;
+    margin-right: 50px;
+    margin-top: -70px;
+    width: 25%;
+    height: 25%;
+    font-size: 20px;
+}
+
+caption {
+    font-family: 'Leckerli One', Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+td,
+th {
+    font-style: italic;
+    font-weight: bold;
+    padding: 8px;
+    border: 3px solid #f95252;
+    text-align: center;
+}
+
+#player1_wins {
+    color: #239ced;
+}
+
+#player2_wins {
+    color: #ff1818;
+}
+
+#blink {
+    animation-duration: 500ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
